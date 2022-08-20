@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stock en verdulería</title>
+  </head>
+  <body>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+    <div id="root"></div>
+
+    <script type="text/javascript">
+      const listaEnStock = [
+        'Manzana', 
+        'Pera',
+        'Naranja',
+        'Banana', 
+        'Kiwi'
+      ]  
+
+      const listaSinStock = [
+        'Duraznos',
+        'Cerezas', 
+        'Anana'
+      ]
+
+      function ConStock(props) {
+        const productosStock = props.productos.map((prod) => 
+        <li>{prod}</li>
+        );
+
+        const listadoStock = 
+          <div>
+            <h1>Lista de Productos en stock:</h1>
+            <ul>{productosStock}</ul>
+          </div>
+        
+        return listadoStock;
+      }
+
+      function SinStock(props) {
+        const productosSinStock = props.productos.map((prod) => 
+        <li>{prod}</li>
+        );
+
+        const listadoSinStock =
+          <div>
+            <h2>Productos en falta:</h2>
+            <ul>{productosSinStock}</ul>
+          </div>
+        
+        return listadoSinStock;
+      }
+
+      const div = (
+        <div>
+          <ConStock productos = {listaEnStock} />
+          <SinStock productos = {listaSinStock} />
+        </div>
+      )
+      
+      ReactDOM.render(div,document.getElementById('root'));
+
+    </script>
+  </body>
+</html>
