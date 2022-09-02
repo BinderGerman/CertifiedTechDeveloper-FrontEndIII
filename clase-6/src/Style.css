@@ -1,0 +1,16 @@
+.Padre {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  color: rgb(38, 141, 230);
+}
+
+.Hijo {
+  background-color: grey;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+
+
