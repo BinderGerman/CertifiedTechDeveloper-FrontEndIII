@@ -1,9 +1,23 @@
 import React from "react";
+import { useEffect } from "react";
 
-const url=  'https://pokeapi.co/api/v2/1';
+const url=  'https://pokeapi.co/api/v2/ditto';
 
 const VerTodos = () => {
-    console.log(url.name)
+    //const [imageUrl, setImageUrl] = useState(null)
+
+    useEffect(() => {
+        fetch(url)
+        .then(res => res.json())
+        .then((data) => {
+            console.log(data)
+            
+        }) 
+
+    })
+
+
+   
     return (
         <>
             

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {pokeContainer, pokeList, pokeOption} from "../styles/styles"
+
 export default class Pokedex extends Component {
 
     render() {

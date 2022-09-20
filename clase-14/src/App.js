@@ -28,7 +28,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className='App'>
       <img src={imageUrl} alt="Mira que lindo perro" />  
       <button onClick={randomDog}>
         Otro perro

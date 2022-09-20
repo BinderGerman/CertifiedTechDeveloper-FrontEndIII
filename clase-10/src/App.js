@@ -1,6 +1,7 @@
 import ListadoResultados from "./ListadoResultados";
 import FormularioNumeros from "./FormularioNumeros";
 import { useState } from "react";
+import Swal from 'sweetalert2';
 
 function App() {
 
@@ -19,6 +20,12 @@ function App() {
     setOperacion([...operaciones, nuevo])
     event.target.valor1.value="";
     event.target.valor2.value="";
+
+    Swal.fire (
+      'Gracias', 
+      'Gracias por completar el formulario', 
+      'success'
+    )
   }
 
   return (

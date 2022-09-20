@@ -1,6 +1,6 @@
-function Rejuvenecedor() {
+function Rejuvenecedor(props) {
     return(
-        <form>
+        <form onSubmit={props.onValidador}>
             <label>Nombre</label>
             <p>Ingrese su nombre: <input type='text' name='nombre' /></p>
             <label>Edad</label>
