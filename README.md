@@ -8,4 +8,4 @@ This repository corresponds to the FrontEnd III subject of the Digital House Cer
 Este repositorio corresponde a la materia FrontEnd III de la carrera Certified Tech Developer de Digital House. El mismo tiene todos los ejercicios vistos en clase con el profesor y todas las actividades realizadas en grupo en mesas de trabajo. En la matería se ven conceptos de JavaScript vanilla incorporados a múltiples proyectos HTML/CSS de forma dinámica. 
 - Las carpetas con el nombre "clase" corresponden a los ejercicios vistos en clase con el profesor.
 - Las carpetas con el nombre "mesa" corresponden a los ejercicios hechos de manera grupal en las mesas de trabajo. 
-- La carpeta con el nombre "01-consignas" tiene todas las consignas entregadas por el profesor para trabajar en las mesas de trabajo.
+- La carpeta con el nombre "01-Consignas" tiene todas las consignas entregadas por el profesor para trabajar en las mesas de trabajo.
